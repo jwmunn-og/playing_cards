@@ -3,7 +3,11 @@ class Card {
     this.rank = rank;
     this.suit = suit;
   }
+
+  outputCard () {
+    console.log(`${this.rank} of ${this.suit}`);
+  }
 }
 const card = new Card(9, "diamonds");
 
-console.log(card);
+card.outputCard();
